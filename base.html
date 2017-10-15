@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>최소한의 HTML</title> 
+        <style>
+            p:nth-child(2) {
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                color: white;
+                background-color: steelblue;
+            }
+        </style>
+    </haed>
+    <body>
+        <p>첫번째 p 태그</p>
+        <p>두번째 차일드 p 태그</p>
+        <script>
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var s = now.getSeconds();
+        var text = '지금은 ' + h + '시 ' + m + '분 ' + s + '초 입니다.';
+        window.document.querySelector('p:nth-child(2)').innerHTML = text;
+        </script>
+    </body>
+</html>
