@@ -8,6 +8,26 @@
     </head>
     <body>
         <p>REAL TIME CHECKER</p>
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="100" fill="steelblue" />
+            <line
+                id="sec"
+                x1="100" y1="100" x2="100" y2="10" stroke="black" stroke-width="2"
+                style="transform-origin: 100px 100px; transform: rotate(0deg);"
+            />
+            <line
+                id="min"
+                x1="100" y1="100" x2="100" y2="20" stroke="black" stroke-width="4"
+                style="transform-origin: 100px 100px; transform: rotate(0deg);"
+            />
+            <line
+                id="hour"
+                x1="100" y1="100" x2="100" y2="40" stroke="black" stroke-width="6"
+                style="transform-origin: 100px 100px; transform: rotate(0deg);"
+            />
+
+        </svg>
+
         <script>
             render();
         </script>
